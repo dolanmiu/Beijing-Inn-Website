@@ -1,0 +1,471 @@
+/* Global */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #8a8683;
+	background-color:#ffffff;
+}
+img {
+	//max-width: 100%;
+}
+a:link {
+	color: #f68f67;
+	text-decoration: none;
+}
+a:hover {
+	color: #bde2df;
+	text-decoration: none;
+}
+a:visited {
+	color: #f68f67;
+	text-decoration: none;
+}
+
+
+
+
+
+/* Navigation */
+
+.menu {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:auto; 
+	background-color:#ffffff;
+	z-index:100;
+}
+#logo {
+	text-align: center;
+	margin: 10px 0;
+}
+#nav {
+	text-align: right;
+	margin: 30px 0 0 0;
+}
+.navigation{
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+.navigation li{
+	float: left;
+	padding:0 0 0 50px;
+}
+.navigation li:hover{
+	cursor:pointer;
+	color: #ffc287;
+}
+
+.navigation .active{
+	cursor:pointer;
+	color: #e74646;
+	font-weight:bold;
+}
+
+
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	padding:140px 0;
+}
+
+
+
+/* Slide 1 */ 
+
+#slide1{
+	background-image:url('../images/footprints.png');
+	background-color:#c42d2d;
+	text-shadow: 1px 1px #414141;
+	color:#ffffff;
+}
+#slide1 h1 {
+	font-size: 3.4em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#e5f7f6;
+	font-weight: 700;
+}
+#slide1 h2 {
+	font-size: 2em;
+	color: #e5f7f6; //#8a8683;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+.phonenumber {
+	font-size: 3em;
+	color: #e5f7f6;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+
+
+
+/* Slide 2 */ 
+
+#slide2{
+	background-color:#ffffff;
+	color:#000000;
+}
+#slide2 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	//color:#ffffff;
+	font-weight: 700;
+}
+#slide2 h2 {
+	font-size: 2em;
+	//color: #ffffff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#menu {
+	text-align: center;
+}
+
+
+
+
+/* Slide 3 - Menu Slide */ 
+
+#slide3{
+	background-image:url('../images/menubg.png');
+	background-color:#8a8683;
+	color:#ffffff;
+	text-shadow: 1px 1px #414141;
+}
+#slide3 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 700;
+}
+
+#slide3 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#slide3 a {
+	color: #ffffff;
+}
+
+#test{
+	background-color:#bde2df;
+	color:#ffffff;
+	text-align:center;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+
+
+
+/* Slide 4 - Map Slide*/
+
+#slide4{
+	color:#c42d2d;
+}
+#slide4 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#8a8683;
+	font-weight: 700;
+}
+#slide4 h2 {
+	font-size: 2em;
+	color: #8a8683;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+.mappadding {
+	padding: 0 0 1px 0;
+}
+
+#googleMap {
+	width: 100%;
+	height: 768px;
+}
+
+
+
+
+/* Slide 5 - Pictures Slide */
+
+#slide5{
+	background-image:url('../images/footprints.png');
+	background-color:#f68f67;
+	text-shadow: 1px 1px #414141;
+	color:#e5f7f6;
+}
+#slide5 h1 {
+	font-size: 3.4em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#e5f7f6;
+	font-weight: 700;
+}
+#slide5 h2 {
+	font-size: 2em;
+	color: #e5f7f6;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#picture {
+	text-align:center;
+	color: #e5f7f6;
+}
+
+.image-link {
+	display: inline-block;
+	margin: 0 10px 20px 10px;
+	line-height: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	border: 4px solid #5e5e5e;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.image-link:hover {
+	border: 4px solid #65c9cf;
+}
+
+.image {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	width: 190px;
+	height: 190px;
+	overflow: hidden;
+}
+
+.image img {
+    width: 700px;
+    margin: -200px 0 0 -100px;
+}
+
+#gallery {
+
+}
+
+
+/* Slide 6 - Reviews Slide */
+#slide6 {
+}
+
+#slide6 h1 {
+	font-size: 3.4em;
+}
+
+#reviews {
+} 
+
+
+/* Slide 7 - Footer */
+#slide7 {
+	background-image:url('../images/footerbg.png');
+	background-color:#2c3e50;
+}
+
+#footerpane {
+}
+
+#footerlogo {
+	font-size: 12px;
+}
+
+#slide7 a {
+	color: #8a8683;
+}
+
+#slide7 h2 {
+	font-size: 16px;
+}
+
+.nopadding {
+	padding: 70px 0 0 0;
+}
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+	padding:0;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+#decorative {
+	display:none;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+.mappadding {
+	padding: 0 0 1px 0;
+}
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	margin:5px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+.mappadding {
+	padding: 0 0 1px 0;
+}
+
+}
+
+/* NailThumb */
+/* .square-thumb
+ {
+    width: 200px;
+    height: 200px;
+ }*/
+
