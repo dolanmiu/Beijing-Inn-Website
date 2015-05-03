@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 
 
     $(window).stellar();
-    $("html").niceScroll();
+    //$("html").niceScroll();
     //initJarallax();
     getPictureURLs();
 

@@ -1,8 +1,8 @@
 <?php
     // Defining the basic cURL function
-function curl($url) {
+    function curl($url) {
         // Assigning cURL options to an array
-    $options = Array(
+        /*$options = Array(
             CURLOPT_RETURNTRANSFER => TRUE,  // Setting cURL's option to return the webpage data
             //CURLOPT_FOLLOWLOCATION => TRUE,  // Setting cURL to follow 'location' HTTP headers
             CURLOPT_AUTOREFERER => TRUE, // Automatically set the referer where following 'location' HTTP headers
@@ -10,17 +10,24 @@ function curl($url) {
             CURLOPT_TIMEOUT => 120,  // Setting the maximum amount of time for cURL to execute queries
             CURLOPT_MAXREDIRS => 10, // Setting the maximum number of redirections to follow
             CURLOPT_USERAGENT => "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1a2pre) Gecko/2008073000 Shredder/3.0a2pre ThunderBrowse/3.2.1.8",  // Setting the useragent
+            CURLOPT_HEADER => false,
             CURLOPT_URL => $url, // Setting cURL's URL option with the $url variable passed into the function
             );
-    /*$options = Array(CURLOPT_URL => $url, 
+        /*$options = Array(CURLOPT_URL => $url, 
                      CURLOPT_HEADER => false 
-                    ); */
+                    ); 
 
         $ch = curl_init();  // Initialising cURL 
         curl_setopt_array($ch, $options);   // Setting cURL's options using the previously assigned array data in $options
         $data = curl_exec($ch); // Executing the cURL request and assigning the returned data to the $data variable
         curl_close($ch);    // Closing cURL 
-        return $data;   // Returning the data from the function 
+        return $data;   // Returning the data from the function */
+        $ch = curl_init();  // Initialising cURL
+        curl_setopt($ch, CURLOPT_URL, $url);    // Setting cURL's URL option with the $url variable passed into the function
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE); // Setting cURL's option to return the webpage data
+        $data = curl_exec($ch); // Executing the cURL request and assigning the returned data to the $data variable
+        curl_close($ch);    // Closing cURL
+        return $data;   // Returning the data from the function
     }
 
     function scrape_between($data, $start, $end) {
@@ -44,9 +51,10 @@ function curl($url) {
         for($i = 0; $i < count($links[1]); $i++) {
             echo '<li>' . $links[2][$i] . ' - ' . $links[1][$i] . '</li>';
         }*/
-        $url = "http://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html";    // Assigning the URL we want to scrape to the variable $url
+        $url = "http://www.tripadvisor.co.uk";    // Assigning the URL we want to scrape to the variable $url
+        //$url = "http://www.google.com";
         $results_page = curl($url); // Downloading the results page using our curl() funtion
-        $results_page = scrape_between($results_page, '<div id="REVIEWS" class="deckB review_collection">', ' injektReviewsContent'); // Scraping out only the middle section of the results page that contains our results
+        //$results_page = scrape_between($results_page, '<div id="REVIEWS" class="deckB review_collection">', ' injektReviewsContent'); // Scraping out only the middle section of the results page that contains our results
 
         $separate_results = explode('<div class="col2of2">', $results_page);   // Expploding the results into separate parts into an array
 
@@ -73,7 +81,7 @@ function curl($url) {
                 }
             }
         }
-        return $fullReviews; // Printing out our array of URLs we've just scraped*/
+        return $results_page; // Printing out our array of URLs we've just scraped*/
     }
 
     class FullReview
@@ -85,10 +93,5 @@ function curl($url) {
             $textRating = $text;
             $starRating = $star;
         } 
-
-        function do_foo()
-        {
-            echo "Doing foo."; 
-        }
     }
 ?>

@@ -110,7 +110,15 @@ a:visited {
 	line-height: 20px;
 }
 
+.indexslidepadding {
+	padding: 140px 0 0 0;
+}
 
+#decorative {
+	padding: 0;
+	margin: 0;
+	height: 500px;
+}
 
 
 /* Slide 2 */ 
@@ -209,6 +217,11 @@ a:visited {
 	height: 768px;
 }
 
+#googlemapsinfowindow {
+	height: 78px;
+	width: 120px;
+	font-size: 18px;
+}
 
 
 
