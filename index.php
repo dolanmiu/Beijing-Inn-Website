@@ -1,4 +1,3 @@
-<?php include 'php/curlscraper.php'; ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
@@ -181,7 +180,7 @@
 					</div>
 				</div>
 				<div id="footerpane" class="grid_7">
-					<a href="http://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><h2>Please leave a review on Trip Advisor to tell us on what we're doing right and wrong!</h2></a>
+					<a href="https://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><h2>Please leave a review on Trip Advisor to tell us on what we're doing right and wrong!</h2></a>
 					<p>Opening Times:<br>
 						<div class="grid_3">
 							Mon - Thurs:<br>Fri - Sat:<br>Sun:
@@ -196,14 +195,14 @@
 						</div>
 				</div>
 				<div id="footerpane" class="grid_1 omega">
-					<a href="http://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><img src="images/tripadvisoricon.png"></a>
+					<a href="https://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><img src="images/tripadvisoricon.png"></a>
 					<a href="https://maps.google.co.uk/maps?q=beijing+inn+gillingham"><img src="images/googlemapsicon.png"></a>
-					<a href="http://www.linkedin.com/pub/dolan-miu/66/a98/343"><img src="images/linkedinlogo.png"></a>
+					<a href="https://www.linkedin.com/pub/dolan-miu/66/a98/343"><img src="images/linkedinlogo.png"></a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA03sMDyRUq9gwVwq-4Glmb6pfUoR4xOaQ&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA03sMDyRUq9gwVwq-4Glmb6pfUoR4xOaQ&sensor=false"></script>
 	<script>
 		function initialize()
 		{
