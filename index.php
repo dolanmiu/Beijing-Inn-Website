@@ -30,7 +30,7 @@
 					<li data-slide="3">Menu</li>
 					<li data-slide="4">Location</li>
 					<li data-slide="5">Pictures</li>
-					<li data-slide="6">Reviews</li>
+					<!--<li data-slide="6">Reviews</li>-->
 				</ul>
 			</div>
 
