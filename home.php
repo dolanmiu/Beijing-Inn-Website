@@ -39,7 +39,7 @@
 	</div>
 
 
-	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="slide indexslidepadding" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_7">
@@ -71,9 +71,10 @@
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="decorative" class="grid_5">
+			<div id="decorative" class="grid_6">
+				<img src="images/noodlebowl.png">
 			</div>
-			<div id="content" class="grid_7 omega">
+			<div id="content" class="grid_6 omega">
 				<h1>Introduction</h1>
 				<h2>A brief overview</h2>
 				<p>With over 20 years experience in the Chinese restaurant trade, Tony is really making a difference at the Beijing Inn, in Gillingham. Tony took over the Beijing Inn five years ago, having moved down from the Miu Vally Takeaway. Backed by an equally experienced panel of chefs, we are able to offer Thai and Malaysian dishes, as well as some of the best Chinese cooking around.</p>
@@ -94,7 +95,7 @@
 						<p>Select from a large range of dishes or set meals from our takeaway menu. We do delivery within the Medway area</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="menus/beijinginn_setmeal.pdf">
 					<div id="menu" class="grid_4">
 						<p><img src="images/setmealicon.png"></p>
 						<h2>Set Meal</h2>
@@ -139,8 +140,10 @@
 				<h1>Recent Reviews</h1>
 				<div id="reviews">
 					<?php
-					    $reviews = getReviews();
-					    for ($i = 0; $i <= 5; $i++) {
+						$reviews = getReviews();
+						echo $reviews;
+					    
+					    /*for ($i = 0; $i <= 5; $i++) {
 					    	//echo '<p>' + $review->starRating + '<br>' + $review->textRating + '</p>';
 					    	echo "\"" . $reviews[$i]->textRating . "\"";
 					    	//echo "<br>";
@@ -153,7 +156,7 @@
 					    	}
 					    	echo ("</p></h2>");
 					    	//print_r($review);
-					    }
+					    }*/
 					?>
 				</div>
 			</div>
@@ -172,7 +175,7 @@
 					<div id="footerlogo">
 						<p>3 KING STREET<br>
 						GILLINGHAM, KENT<br>
-						ME4 6ER</p>
+						ME7 1EY</p>
 						<p>01634 570 633<br>
 						01634 851 221</p>
 					</div>
@@ -221,7 +224,7 @@
 			marker.setMap(map);
 
 			var infowindow = new google.maps.InfoWindow({
-				content:"3 King Street, Gillingham, ME7 1EY",
+				content:"<div id=\"googlemapsinfowindow\">3 King Street" + "<br />" + "Gillingham" + "<br />" + "ME7 1EY</div>",
 			});
 
 			infowindow.open(map,marker);
@@ -235,7 +238,7 @@
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>-->
 	<script type="text/javascript" src="js/jarallax-0.2.2.js"></script>
 	<!--<script type="text/javascript" src="js/jquery.nailthumb.1.1.min.js"></script>-->
 	<script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
