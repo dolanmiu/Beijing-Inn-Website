@@ -8,7 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 	<title>Beijing Inn: Chinese Restaurant & Takeaway</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
@@ -133,15 +133,15 @@
 		</div>
 	</div>
 
-	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<!--<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
 				<h1>Recent Reviews</h1>
 				<div id="reviews">
 					<?php
-						$reviews = getReviews();
-						echo $reviews;
+						//$reviews = getReviews();
+						//echo $reviews;
 					    
 					    /*for ($i = 0; $i <= 5; $i++) {
 					    	//echo '<p>' + $review->starRating + '<br>' + $review->textRating + '</p>';
@@ -162,7 +162,7 @@
 			</div>
 
 		</div>
-	</div>
+	</div>-->
 
 	<div class="slide nopadding" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
@@ -234,7 +234,7 @@
 
 
 	</script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
