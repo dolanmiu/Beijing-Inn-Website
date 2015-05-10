@@ -8,7 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 	<title>Beijing Inn: Chinese Restaurant & Takeaway</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
@@ -211,7 +211,7 @@
 					</div>
 				</div>
 				<div id="footerpane" class="grid_7">
-					<a href="http://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><h2>Please leave a review on Trip Advisor to tell us on what we're doing right and wrong!</h2></a>
+					<a href="https://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><h2>Please leave a review on Trip Advisor to tell us on what we're doing right and wrong!</h2></a>
 					<p>Opening Times:<br>
                         <div id="openingTimes" class="grid_12">
                             <div class="grid_3">
@@ -235,15 +235,15 @@
 						</div>
 				</div>
 				<div id="footerpane" class="grid_1 omega">
-					<a href="http://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><img src="images/tripadvisoricon.png"></a>
+					<a href="https://www.tripadvisor.co.uk/Restaurant_Review-g503904-d789989-Reviews-Beijing_Inn-Gillingham_Kent_England.html"><img src="images/tripadvisoricon.png"></a>
 					<a href="https://www.facebook.com/Beijinginn"><img src="images/facebookicon.png"></a>
 					<a href="https://maps.google.co.uk/maps?q=beijing+inn+gillingham"><img src="images/googlemapsicon.png"></a>
-					<a href="http://www.linkedin.com/pub/dolan-miu/66/a98/343"><img src="images/linkedinlogo.png"></a>
+					<a href="https://www.linkedin.com/pub/dolan-miu/66/a98/343"><img src="images/linkedinlogo.png"></a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA03sMDyRUq9gwVwq-4Glmb6pfUoR4xOaQ&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA03sMDyRUq9gwVwq-4Glmb6pfUoR4xOaQ&sensor=false"></script>
 	<script>
         var map;
 		function initialize()
@@ -276,7 +276,7 @@
 
 	</script>
     
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
