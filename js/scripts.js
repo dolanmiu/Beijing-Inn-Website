@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+
+
     $(window).stellar();
     //$("html").niceScroll();
     //initJarallax();
@@ -17,12 +19,13 @@ jQuery(document).ready(function ($) {
 
         if (direction === 'down') {
             $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
-        } else {
+        }
+        else {
             $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
         }
 
     });
-
+ 
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
             $('.navigation li[data-slide="1"]').addClass('active');
@@ -38,10 +41,10 @@ jQuery(document).ready(function ($) {
 
     function getPictureURLs() {
         $.ajax({
-            url: "/photos/",
-            success: function (data) {
-                $(data).find("a:contains(.JPG)").each(function () {
-                    // will loop through 
+            url: "/photos",
+            success: function(data){
+                $(data).find("a:contains(.JPG)").each(function(){
+                // will loop through 
                     //alert("Found a file: " + $(this).attr("href"));
                     $("#gallery").append('<div id="picture" class="grid_3 omega"><a class="image-link" href="photos/' + $(this).attr("href") + '" data-lightbox="image-1"><div class="image"><img src="photos/' + $(this).attr("href") + '" /></div></a></div>');
                 });
@@ -51,11 +54,11 @@ jQuery(document).ready(function ($) {
 
     function initialize() {
         var mapProp = {
-            center: new google.maps.LatLng(51.508742, -0.120850),
-            zoom: 15,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:15,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
 
     function initJarallax() {
