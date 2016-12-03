@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
 
     function getPictureURLs() {
         $.ajax({
-            url: "/photos",
+            url: "photos",
             success: function(data) {
                 $(data).find("a:contains(.JPG)").each(function() {
                     // will loop through 
