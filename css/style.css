@@ -341,12 +341,7 @@ a:visited {
     display: inline-block;
     margin: 0 10px 20px 10px;
     line-height: 0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    border: 4px solid #5e5e5e;
+    border: 2px solid #e01d1d;
     -webkit-transition: all 0.1s ease-out;
     -moz-transition: all 0.1s ease-out;
     -o-transition: all 0.1s ease-out;
@@ -354,15 +349,10 @@ a:visited {
 }
 
 .image-link:hover {
-    border: 4px solid #65c9cf;
+    border: 2px solid #ff8e8e;
 }
 
 .image {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
     width: 190px;
     height: 190px;
     overflow: hidden;
