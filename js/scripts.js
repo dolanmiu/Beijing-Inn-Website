@@ -4,7 +4,12 @@ jQuery(document).ready(function($) {
     $(window).stellar();
     //$("html").niceScroll();
     //initJarallax();
-    getPictureURLs();
+    //getPictureURLs();
+    getPhotos(function(data) {
+        data.forEach(function(fbPhoto) {
+            $("#gallery").append('<div id="picture" class="grid_3 omega"><a class="image-link" href="http://graph.facebook.com/' + fbPhoto.id + '/picture" data-lightbox="image-1"><div class="image"><img src="http://graph.facebook.com/' + fbPhoto.id + '/picture" /></div></a></div>');
+        });
+    });
 
 
     var links = $('.navigation').find('li');
@@ -76,5 +81,6 @@ jQuery(document).ready(function($) {
         goToByScroll(dataslide);
 
     });
-
 });
+
+// http://graph.facebook.com/{{fbuid}}/picture
