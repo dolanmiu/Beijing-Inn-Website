@@ -180,10 +180,20 @@ a:visited {
     padding: 140px 0 0 0;
 }
 
+.index-content {
+    padding-bottom: 70px;
+}
+
 #decorative {
     padding: 0;
     margin: 0;
     height: 500px;
+}
+
+.caligoraphy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
