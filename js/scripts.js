@@ -1,16 +1,11 @@
 jQuery(document).ready(function($) {
 
-
     $(window).stellar();
-    //$("html").niceScroll();
-    //initJarallax();
-    //getPictureURLs();
     getPhotos(function(data) {
         data.forEach(function(fbPhoto) {
             $("#gallery").append('<div id="picture" class="grid_3 omega"><a class="image-link" href="http://graph.facebook.com/' + fbPhoto.id + '/picture" data-lightbox="image-1"><div class="image"><img src="http://graph.facebook.com/' + fbPhoto.id + '/picture" /></div></a></div>');
         });
     });
-
 
     var links = $('.navigation').find('li');
     slide = $('.slide');
@@ -43,19 +38,6 @@ jQuery(document).ready(function($) {
         }, 500, 'easeInOutQuint');
     }
 
-    function getPictureURLs() {
-        $.ajax({
-            url: "photos",
-            success: function(data) {
-                $(data).find("a:contains(.JPG)").each(function() {
-                    // will loop through 
-                    //alert("Found a file: " + $(this).attr("href"));
-                    $("#gallery").append('<div id="picture" class="grid_3 omega"><a class="image-link" href="photos/' + $(this).attr("href") + '" data-lightbox="image-1"><div class="image"><img src="photos/' + $(this).attr("href") + '" /></div></a></div>');
-                });
-            }
-        });
-    }
-
     function initialize() {
         var mapProp = {
             center: new google.maps.LatLng(51.508742, -0.120850),
@@ -82,5 +64,3 @@ jQuery(document).ready(function($) {
 
     });
 });
-
-// http://graph.facebook.com/{{fbuid}}/picture
