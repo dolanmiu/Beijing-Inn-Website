@@ -3,7 +3,7 @@ Beijing Inn's Official Website
 
 > The official website for Gillingham's best Chinese restaurant!
 
-> Recently modernised to move away from **000webhost** and introduce good practice. It is now served via **Github Pages**
+> Recently modernised to move away from **000webhost** and introduced good practice. It is now served via **Github Pages**
 
 # Features
 PHP now removed. Uses pure **HTML5** + **JS** + **CSS**.
