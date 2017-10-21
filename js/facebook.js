@@ -11,7 +11,7 @@ function getAuthToken(callback) {
 function getPhotos(callback) {
     getAuthToken(function(authToken) {
         $.ajax({
-            url: `https://graph.facebook.com/v2.7/beijinginn/photos?${authToken.access_token}&type=uploaded&limit=24`,
+            url: `https://graph.facebook.com/v2.7/beijinginn/photos?access_token=${authToken.access_token}&type=uploaded&limit=24`,
             success: function(photos) {
                 callback(photos.data);
             }
